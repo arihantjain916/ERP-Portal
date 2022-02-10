@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Register In ERP</title>
+</head>
+
+<body>
+    {{>navbar}} 
+    <div class="container">
+        <form action="/register" method="POST" class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="validationDefault01" name = "email" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name *</label>
+                <input type="text" class="form-control" id="validationDefault01" name = "firstname" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name *</label>
+                <input type="text" class="form-control" id="validationDefault02" name = "lastname" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Username *</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" name = "username" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Password *</label>
+                <input type="password" class="form-control" id="validationDefault02" name = "password" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label"> Confirm Password *</label>
+                <input type="password" class="form-control" id="validationDefault02" name = "confirmpassword" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">City *</label>
+                <input type="text" class="form-control" id="validationDefault03" name = "city"  required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" name = "state" required>
+                    <option selected disabled value="">...</option>
+                    <option>Rajasthan</option>
+                    <option>Uttar Pradesh</option>
+                    <option>West Bengal</option>
+                    <option>Karnatak</option>
+                    <option>Oddisha</option>
+                    <option>Gujrat</option>
+                    <option>Delhi</option>
+                    <option>Punjab</option>
+                    <option>Haryana</option>
+                    <option>Chandigarh</option>
+                    <option>Uttrakhand</option>
+                </select> 
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="validationDefault05" name = "phonenumber" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
